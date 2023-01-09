@@ -1,7 +1,14 @@
 {
   "goerli": {
     "FactoryUpgradeable": {
-      "address": "0x544b45ee9C2bc6DB5F2e0914dF7D718c7255e85E"
+      "address": "0x819f0159cDD94669aCF9748a36e59d59dB98C06D",
+      "startBlock": 8163100
+    }
+  },
+  "mumbai": {
+    "FactoryUpgradeable": {
+      "address": "0xC4007B964Fdbb221C6e2c6f12076218219655fB5",
+      "startBlock": 29886100
     }
   }
 }

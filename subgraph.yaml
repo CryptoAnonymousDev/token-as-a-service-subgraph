@@ -1,13 +1,14 @@
-specVersion: 0.0.1
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum
     name: FactoryUpgradeable
-    network: goerli
+    network: mumbai
     source:
-      address: "0x544b45ee9C2bc6DB5F2e0914dF7D718c7255e85E"
       abi: FactoryUpgradeable
+      address: "0xC4007B964Fdbb221C6e2c6f12076218219655fB5"
+      startBlock: 29886100
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -25,6 +26,8 @@ dataSources:
       abis:
         - name: FactoryUpgradeable
           file: ./abis/FactoryUpgradeable.json
+        - name: ERC20
+          file: ./abis/ERC20.json
       eventHandlers:
         - event: AdminChanged(address,address)
           handler: handleAdminChanged

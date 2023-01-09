@@ -1,6 +1,9 @@
-type ExampleEntity @entity {
-  id: ID!
-  count: BigInt!
-  previousAdmin: Bytes! # address
-  newAdmin: Bytes! # address
+type Implementation @entity {
+  id: Bytes!
+  deployer: Bytes!
+  productName: String!
+  source: Bytes!
+  version: BigInt!
+  tokenName: String!
+  tokenSymbol: String!
 }
